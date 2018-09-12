@@ -1,0 +1,22 @@
+// method untuk mengubah BYTE ke 'B', 'KB', 'MB', 'GB', 'TB', 'PB', 'EB', 'ZB', 'YB'
+     public function readableBytes($num) {
+        $neg = $num < 0;
+
+        $units = array('BY', 'KB', 'MB', 'GB', 'TB', 'PB', 'EB', 'ZB', 'YB');
+
+        if ($neg){
+            $num = -$num;
+        }
+
+        if ($num < 1){
+            return ($neg ? '-' : '') . $num . ' B';
+        }
+
+        $exponent = min(floor(log($num) / log(1000)), count($units) - 1);
+
+        $num = sprintf('%.02F', ($num / pow(1000, $exponent)));
+
+        $unit = $units[$exponent];
+
+        return ($neg ? '-' : '') . $num . ' ' . $unit;
+    }
