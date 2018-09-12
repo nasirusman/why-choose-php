@@ -1,0 +1,31 @@
+public function data_to_byte($data) {
+
+    $kilobyte_to_byte = 1000;
+    $megabyte_to_byte = 1e+6;
+    $gigabyte_to_byte = 1e+9;
+    $terabyte_to_byte = 1e+12;
+    $petabyte_to_byte = 1e+15;
+
+    $kapasitas = substr($data, -2);
+
+        switch ($kapasitas) {
+          case "KB":
+              return substr($data, 0, -3) * $kilobyte_to_byte;
+              break;
+          case "MB":
+              return substr($data, 0, -3) * $megabyte_to_byte;
+              break;
+          case "GB":
+              return substr($data, 0, -3) * $gigabyte_to_byte;
+              break;
+          case "TB":
+                return substr($data, 0, -3) * $terabyte_to_byte;
+                break;
+          case "PB":
+                return substr($data, 0, -3) * $petabyte_to_byte;
+                break;
+          default:
+              return substr($data, 0, -3);
+      }
+
+  }
