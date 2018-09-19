@@ -1,0 +1,10 @@
+composer install
+composer show
+composer show [nama/package]
+composer require [nama/package]
+
+// tempatkan di index.php codeigniter paling bawah sebelum
+// require_once BASEPATH.'core/CodeIgniter.php';
+require FCPATH . 'vendor/autoload.php';
+
+composer require fzaninotto/faker
