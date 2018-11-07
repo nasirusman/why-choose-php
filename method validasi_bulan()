@@ -1,40 +1,40 @@
 public function validasi_bulan($bulan) {
     switch ($bulan) {
     case 1:
-        echo "JANUARI";
+        return "JANUARI";
         break;
     case 2:
-        echo "FEBRUARI";
+        return "FEBRUARI";
         break;
     case 3:
-        echo "MARET";
+        return "MARET";
         break;
     case 4:
-        echo "APRIL";
+        return "APRIL";
         break;
     case 5:
-        echo "MEI";
+        return "MEI";
         break;
     case 6:
-        echo "JUNI";
+        return "JUNI";
         break;
     case 7:
-        echo "JULI";
+        return "JULI";
         break;
     case 8:
-        echo "AGUSTUS";
+        return "AGUSTUS";
         break;
     case 9:
-        echo "SEPTEMBER";
+        return "SEPTEMBER";
         break;
     case 10:
-        echo "OKTOBER";
+        return "OKTOBER";
         break;
     case 11:
-        echo "NOVEMBER";
+        return "NOVEMBER";
         break;
     case 12:
-        echo "DESEMBER";
+        return "DESEMBER";
         break;
       }
   }
