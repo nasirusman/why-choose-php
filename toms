@@ -13,3 +13,40 @@ line 1138 (saya hapus) (file start-dashboard-2.php)
     </a>
   </li>
   
+ order juga saya hapus
+ 
+ <li>
+				<a href="#" class=" hvr-bounce-to-right">
+					<i class="fa fa-credit-card-alt nav_icon "></i>
+					<span class="nav-label">Order</span>
+					<span class="fa arrow"></span>
+				</a>
+				<ul class="nav nav-second-level">
+					<li>
+						<a href="<?php echo site_url().'DataOrder2016'; ?>" onclick="window.open(this.href); return false;" class=" hvr-bounce-to-right">
+							<i class="fa fa-folder nav_icon"></i>Order CO
+						</a>
+					</li>
+					<li>
+						<a href="<?php echo site_url().'DataOrder2017'; ?>" onclick="window.open(this.href); return false;" class=" hvr-bounce-to-right">
+							<i class="fa fa-folder nav_icon"></i>Order JPP
+						</a>
+					</li>
+					<li>
+						<a href="<?php echo site_url().'DataNaru2017'; ?>" onclick="window.open(this.href); return false;" class=" hvr-bounce-to-right">
+							<i class="fa fa-folder nav_icon"></i>Naru 2017
+						</a>
+					</li>
+					<li>
+						<a href="<?php echo site_url().'Tenos2017'; ?>" onclick="window.open(this.href); return false;" class=" hvr-bounce-to-right">
+							<i class="fa fa-folder nav_icon"></i>Tenoss
+						</a>
+					</li>
+					<li>
+						<a href="<?php echo site_url().'order_taf'; ?>" onclick="window.open(this.href); return false;" class=" hvr-bounce-to-right">
+							<i class="fa fa-folder nav_icon"></i>Tracking Activity
+						</a>
+					</li>
+				</ul>
+			</li>
+  
