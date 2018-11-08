@@ -1,0 +1,15 @@
+line 1138 (saya hapus) (file start-dashboard-2.php)
+
+	<li>
+    <a href="<?php echo site_url().'UploadData'; ?>" class=" hvr-bounce-to-right">
+      <i class="fa fa-cloud-upload nav_icon "></i>
+      <span class="nav-label">Upload</span>
+    </a>
+  </li>
+  <li>
+    <a href="<?php echo site_url().'Editing'; ?>" class=" hvr-bounce-to-right">
+      <i class="fa fa-refresh nav_icon "></i>
+      <span class="nav-label">Editing</span>
+    </a>
+  </li>
+  
