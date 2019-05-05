@@ -39,7 +39,7 @@
       </div>
 
       <div class="my-02">                 
-          @foreach ($hasil as $key => $value)
+          @foreach ($hasil as $key1 => $value1)
           <table class="table table-bordered table-sm table-sm"> 
             <tr class="bg-primary text-white">
               <td>Lintang</td>
@@ -47,12 +47,12 @@
               <td>Magnitudo</td>
               <td>Kedalaman</td>
             </tr>
-            @foreach ($value as $key2 => $value2)
+            @foreach ($value1 as $key2 => $value2)
             <tr>
-              <td>{{ $hasil[$key][$key2][0] }}</td>
-              <td>{{ $hasil[$key][$key2][1] }}</td>
-              <td>{{ $hasil[$key][$key2][2] }}</td>
-              <td>{{ $hasil[$key][$key2][3] }}</td>
+              <td>{{ $hasil[$key1][$key2][0] }}</td>
+              <td>{{ $hasil[$key1][$key2][1] }}</td>
+              <td>{{ $hasil[$key1][$key2][2] }}</td>
+              <td>{{ $hasil[$key1][$key2][3] }}</td>
             </tr>
             @endforeach
           </table>
