@@ -1,0 +1,4 @@
+public function format_tanggal($data)
+{
+    return date('d/m/Y', strtotime($data));
+}
