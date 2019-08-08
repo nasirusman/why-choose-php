@@ -1,0 +1,12 @@
+// --------------------------------------------------- Method second to timer -----------------------------------------------------
+    public function Second2Time($seconds)
+    {
+        $hours = floor($seconds / 3600);
+        $mins = floor($seconds / 60 % 60);
+        $secs = floor($seconds % 60);
+
+        // If you want to get time format:
+
+        $timeFormat = sprintf('%02d:%02d:%02d', $hours, $mins, $secs);
+        return $timeFormat;
+    }
