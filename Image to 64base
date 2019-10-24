@@ -3,4 +3,11 @@ $type = pathinfo($path, PATHINFO_EXTENSION);
 $data = file_get_contents($path);
 $base64 = 'data:image/' . $type . ';base64,' . base64_encode($data);
 
+// For Laravel
+$path = $request->file('evidence');
+$type = $request->evidence->getClientOriginalExtension();
+$data = file_get_contents($path);
+$base64 = 'data:image/' . $type . ';base64,' . base64_encode($data);
+$AgendaBulananModel->evidence = $base64;
+
 Sumber: https://stackoverflow.com/questions/3967515/how-to-convert-an-image-to-base64-encoding
